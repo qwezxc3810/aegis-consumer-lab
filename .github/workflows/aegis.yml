@@ -1,0 +1,15 @@
+
+name: AEGIS Consumer Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  aegis:
+    uses: qwezxc3810/aegis-lab/.github/workflows/reusable-test.yml@29cbd2c3ee8a143c2cb741ff505dacd701baa64d
